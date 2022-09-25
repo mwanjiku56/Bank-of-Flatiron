@@ -3,18 +3,6 @@ import Transaction from "./Transaction";
 
 
 function TransactionsList({transactions}) {
- 
-  // const [transactions, setTransactions] = useState([]);
-  // useEffect(() => {
-  //   fetch("http://localhost:8001/transactions")
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       setTransactions(data);
-  //     });
-  // }, []);
-
-
-
   return (
     <table className="ui celled striped padded table">
       <tbody>

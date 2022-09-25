@@ -216,6 +216,20 @@
       "category": "FOOD",
       "amount": "90",
       "id": 31
+    },
+    {
+      "date": "2022-09-21",
+      "description": "mercy",
+      "amount": "110",
+      "category": "food",
+      "id": 32
+    },
+    {
+      "date": "2022-09-28",
+      "description": "paycheck for Maruga",
+      "amount": "1000",
+      "category": "SALARY",
+      "id": 33
     }
   ]
 }
