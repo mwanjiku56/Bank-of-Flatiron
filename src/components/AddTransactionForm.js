@@ -18,7 +18,7 @@ function AddTransactionForm({onSubmission}) {
   }
 
 
-  function handleSubmit(e){
+  function submitData(e){
     e.preventDefault();
     onSubmission(formData);
     setFormData({date:"", description:"", amount:0, category:""});
@@ -28,7 +28,7 @@ function AddTransactionForm({onSubmission}) {
 
   return (
     <div className="ui segment">
-      <form onChange={handleChange} onSubmit ={handleSubmit}  className="ui form">
+      <form onChange={handleChange} onSubmit ={submitData}  className="ui form">
         <div className="inline fields">
           <input value={formData.date} type="date" id="date" name="date"  />
           <input value={formData.description} type="text" id="description" name="description" placeholder="Description"  />
