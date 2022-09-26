@@ -18,7 +18,6 @@ function AccountContainer() {
     useEffect(fetchTransactions,[]);
 
   function handlePost(newTransaction) {
-    //event.preventDefault();
     setTransactions(transactions=>[...transactions, newTransaction])
     fetch("http://localhost:8001/transactions", {
       method: "POST",

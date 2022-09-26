@@ -195,6 +195,13 @@
       "category": "food",
       "amount": "12",
       "id": 36
+    },
+    {
+      "date": "2022-09-29",
+      "description": "pay for hair",
+      "category": "selfcare",
+      "amount": "200",
+      "id": 37
     }
   ]
 }
