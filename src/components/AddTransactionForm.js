@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 
 function AddTransactionForm({onSubmission}) {
-  const [formData, setFormData] = useState({
+  const [dataForm, setdataForm] = useState({
     date: "",
     description: "",
     category:"",
@@ -11,8 +11,8 @@ function AddTransactionForm({onSubmission}) {
 
 
   function handleChange(event) {
-    setFormData({
-      ...formData,
+    setdataForm({
+      ...dataForm,
       [event.target.name]: event.target.value
     });
   }
@@ -20,8 +20,8 @@ function AddTransactionForm({onSubmission}) {
 
   function submitData(e){
     e.preventDefault();
-    onSubmission(formData);
-    setFormData({date:"", description:"", amount:0, category:""});
+    onSubmission(dataForm);
+    setdataForm({date:"", description:"", amount:0, category:""});
   }
   
 
@@ -30,10 +30,10 @@ function AddTransactionForm({onSubmission}) {
     <div className="ui segment">
       <form onChange={handleChange} onSubmit ={submitData}  className="ui form">
         <div className="inline fields">
-          <input value={formData.date} type="date" id="date" name="date"  />
-          <input value={formData.description} type="text" id="description" name="description" placeholder="Description"  />
-          <input value={formData.category} type="text" id="category" name="category" placeholder="Category"  />
-          <input value={formData.amount} type="number" id="amount" name="amount" placeholder="Amount"   />
+          <input value={dataForm.date} type="date" id="date" name="date"  />
+          <input value={dataForm.description} type="text" id="description" name="description" placeholder="Description"  />
+          <input value={dataForm.category} type="text" id="category" name="category" placeholder="Category"  />
+          <input value={dataForm.amount} type="number" id="amount" name="amount" placeholder="Amount"   />
         </div>
         <button className="ui button" type="submit">
           Add Transaction

@@ -181,6 +181,20 @@
       "category": "food",
       "amount": "02",
       "id": 34
+    },
+    {
+      "date": "2022-09-22",
+      "description": "hrrtr",
+      "amount": "10",
+      "category": "rre",
+      "id": 35
+    },
+    {
+      "date": "2022-09-23",
+      "description": "delivery",
+      "category": "food",
+      "amount": "12",
+      "id": 36
     }
   ]
 }
